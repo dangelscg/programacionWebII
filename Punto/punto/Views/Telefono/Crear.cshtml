@@ -62,6 +62,72 @@
         <input type="submit"value="enviar" />
         }
 
+
+        <!--vista julio milguer, telefonos-->
+        <table border="1">
+            <tr>
+                <td>@Html.Label("idtelefono")</td>
+                <td>
+                    @Html.TextBox("tbidtelefono")
+                </td>
+            </tr>
+            <tr>
+                <td> @Html.Label("Numero")</td>
+                <td>@Html.TextBox("tbnumero", " ", new { placeholder = "local o celular", @class = "textos" })</td>
+
+            </tr>
+            <tr>
+                <td> @Html.Label("Tipo")</td>
+                <td>@Html.TextBox("tbtipo")</td>
+
+            </tr>
+            <tr>
+                <td> @Html.Label("codigo Area")</td>
+                <td>
+                    @{var listaarea = new List<SelectListItem>(){
+                new SelectListItem(){ Text="area1", Value="1"}
+                          };   }
+                @Html.DropDownList("DLarea", listaarea)
+            </td>
+
+        </tr>
+        <tr>
+            <td> @Html.Label("ID lugares")</td>
+            <td>
+                @{var listalugares = new List<SelectListItem>(){
+                new SelectListItem(){ Text="lugar1", Value="1"}
+                          };   }
+            @Html.DropDownList("DLlugares", listalugares)
+        </td>
+
+    </tr>
+    <tr>
+        <td> @Html.Label("fecha creacion")</td>
+        <td>@Html.TextBox("tbfechacreacion")</td>
+
+    </tr>
+    <tr>
+        <td> @Html.Label("fecha modificacion")</td>
+        <td>@Html.TextBox("tbfechamodificacion")</td>
+
+    </tr>
+    <tr>
+        <td> @Html.Label("estado")</td>
+        <td>@Html.TextBox("tbestado")</td>
+
+    </tr>
+    <tr>
+        <td colspan="2"> <input type="submit" value="enviar" /></td>
+
+
+    </tr>
+
+
+
+
+
+    </table>
+
     </div>
 </body>
 </html>

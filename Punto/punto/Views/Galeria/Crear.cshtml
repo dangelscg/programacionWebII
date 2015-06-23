@@ -50,6 +50,65 @@
             <input type="submit"value="enviar" />
         }
 
+
+        <!-- vista JULIO MILGUER, galeria-->
+        <table border="1">
+            <tr>
+                <td>@Html.Label("idimagen")</td>
+                <td>
+                    @{var listaimagen = new List<SelectListItem>(){
+                new SelectListItem(){ Text="imagen1", Value="1"}
+                          };   }
+                    @Html.DropDownList("DLimagen", listaimagen)
+                </td>
+            </tr>
+            <tr>
+                <td> @Html.Label("nombre")</td>
+                <td>@Html.TextBox("tbnombre")</td>
+
+            </tr>
+            <tr>
+                <td> @Html.Label("descripcion")</td>
+                <td>@Html.TextBox("tbdescripcion")</td>
+
+            </tr>
+            <tr>
+                <td> @Html.Label("idlugares")</td>
+                <td>
+                    @{var listalugares = new List<SelectListItem>(){
+                new SelectListItem(){ Text="lugar1", Value="1"}
+                          };   }
+                @Html.DropDownList("DLlugares", listalugares)
+            </td>
+
+        </tr>
+        <tr>
+            <td> @Html.Label("fecha creacion")</td>
+            <td>@Html.TextBox("tbfechacreacion")</td>
+
+        </tr>
+        <tr>
+            <td> @Html.Label("fecha modificacion")</td>
+            <td>@Html.TextBox("tbfechamodificacion")</td>
+
+        </tr>
+        <tr>
+            <td> @Html.Label("estado")</td>
+            <td>@Html.TextBox("tbestado")</td>
+
+        </tr>
+        <tr>
+            <td colspan="2"> <input type="submit" value="enviar" /></td>
+
+
+        </tr>
+
+
+
+
+
+    </table>
+
     </div>
 </body>
 </html>
