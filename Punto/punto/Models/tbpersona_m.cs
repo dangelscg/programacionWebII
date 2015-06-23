@@ -13,8 +13,7 @@ namespace punto.Models
     }
     public interface itbpersona
     {
-        [Display(Name = "Tsgjdasasdasj Nombre")]
-        
+        [Display(Name = "Tu Nombre")]
         [Required]
         object nombre { get; set; }
         [Display(Name = "Apellido Paterno")]

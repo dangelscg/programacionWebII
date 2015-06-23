@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
-namespace PuntoDeEncuentro.Models
+namespace punto.Models
 {
     [MetadataType(typeof(itbtelefonos))]
     public partial class tbtelefonos
     {
     }
-  
     public interface itbtelefonos
     {
         [Required]

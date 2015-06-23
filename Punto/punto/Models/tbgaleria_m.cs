@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
-namespace PuntoDeEncuentro.Models
+namespace punto.Models
 {
     [MetadataType(typeof(itbgaleria))]
     public partial class tbgaleria

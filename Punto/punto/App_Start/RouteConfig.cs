@@ -16,8 +16,7 @@ namespace punto
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Persona", action = "crear", id = UrlParameter.Optional }
-
+                defaults: new { controller = "Pago", action = "Crear", id = UrlParameter.Optional }
             );
         }
     }

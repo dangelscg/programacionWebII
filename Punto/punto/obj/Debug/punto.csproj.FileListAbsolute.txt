@@ -54,31 +54,53 @@ D:\Sqlyog.Enterprise.v7.14.Incl.Keymaker-CORE\PuntoDeEncuentro\punto\punto\bin\S
 D:\Sqlyog.Enterprise.v7.14.Incl.Keymaker-CORE\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.xml
 D:\Sqlyog.Enterprise.v7.14.Incl.Keymaker-CORE\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Deployment.xml
 D:\Sqlyog.Enterprise.v7.14.Incl.Keymaker-CORE\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Razor.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\punto.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\punto.pdb
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\EntityFramework.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\Newtonsoft.Json.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Net.Http.Formatting.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Helpers.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Http.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Http.WebHost.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Mvc.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Razor.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Razor.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\EntityFramework.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\Newtonsoft.Json.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Net.Http.Formatting.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Helpers.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Http.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Http.WebHost.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Mvc.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.Razor.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\bin\System.Web.WebPages.Razor.xml
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\obj\Debug\punto.csprojResolveAssemblyReference.cache
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\obj\Debug\punto.dll
-C:\Users\Sandro\Desktop\PuntoDeEncuentro\punto\punto\obj\Debug\punto.pdb
+D:\prog web II\punto\punto\bin\punto.dll
+D:\prog web II\punto\punto\bin\punto.pdb
+D:\prog web II\punto\punto\bin\EntityFramework.dll
+D:\prog web II\punto\punto\bin\Microsoft.Web.Infrastructure.dll
+D:\prog web II\punto\punto\bin\Newtonsoft.Json.dll
+D:\prog web II\punto\punto\bin\System.Net.Http.Formatting.dll
+D:\prog web II\punto\punto\bin\System.Web.Helpers.dll
+D:\prog web II\punto\punto\bin\System.Web.Http.dll
+D:\prog web II\punto\punto\bin\System.Web.Http.WebHost.dll
+D:\prog web II\punto\punto\bin\System.Web.Mvc.dll
+D:\prog web II\punto\punto\bin\System.Web.Razor.dll
+D:\prog web II\punto\punto\bin\System.Web.WebPages.Deployment.dll
+D:\prog web II\punto\punto\bin\System.Web.WebPages.dll
+D:\prog web II\punto\punto\bin\System.Web.WebPages.Razor.dll
+D:\prog web II\punto\punto\bin\EntityFramework.xml
+D:\prog web II\punto\punto\bin\Newtonsoft.Json.xml
+D:\prog web II\punto\punto\bin\System.Net.Http.Formatting.xml
+D:\prog web II\punto\punto\bin\System.Web.Helpers.xml
+D:\prog web II\punto\punto\bin\System.Web.Http.xml
+D:\prog web II\punto\punto\bin\System.Web.Http.WebHost.xml
+D:\prog web II\punto\punto\bin\System.Web.Mvc.xml
+D:\prog web II\punto\punto\bin\System.Web.Razor.xml
+D:\prog web II\punto\punto\bin\System.Web.WebPages.xml
+D:\prog web II\punto\punto\bin\System.Web.WebPages.Deployment.xml
+D:\prog web II\punto\punto\bin\System.Web.WebPages.Razor.xml
+D:\prog web II\punto\punto\obj\Debug\punto.csprojResolveAssemblyReference.cache
+D:\prog web II\punto\punto\obj\Debug\punto.dll
+D:\prog web II\punto\punto\obj\Debug\punto.pdb
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\punto.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\punto.pdb
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\EntityFramework.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\Newtonsoft.Json.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Helpers.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Mvc.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Razor.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.Deployment.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.Razor.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\EntityFramework.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\Newtonsoft.Json.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Helpers.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Mvc.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.Razor.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.Deployment.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\bin\System.Web.WebPages.Razor.xml
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\obj\Debug\punto.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\obj\Debug\punto.dll
+C:\Users\USUARIO\Desktop\programacion web II\viernes 19-06-15\punto\punto\obj\Debug\punto.pdb

@@ -10,60 +10,50 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Crear</title>
-    <script src="~/js/jquery-1.11.3.min.js"></script>
-
 </head>
 <body>
     <div>
-        <script>
-            $(window).load(function(evt){
-                console.log("cargo la pagina web");
-                $("#buscar").click(function onclick(et) {
-                    $.ajax({
-                        url: 'http://localhost:2022/api/values?ci=123456',
-                        type: 'get',
-                        params: "ci=$"+$("#buscar").val(),
-                        success: function (datos) {
-                            console.log(datos);
-                        }
-                    });
-                });
-
-            });
-        </script>
-        <input  type="text" id="buscar" />
-        <button id="btbuscar">buscar</button>
-
-
-
         @{
-            int i = 0;
-            i++;
-            @i
-            }
+        int i = 0;
+        i++;
+        @i
+        }
 
         @Html.Label("este es un label")
-        @Html.TextBox("nombre", "este es el nombre", 
-            new { placeholder="Tu nombre",@class="textos" }
+        @Html.TextBox("nombre", "este es el nombre",
+         new{ placeholder="Tu nombre",@class="textos" }
         )
         @{
-            var lista=new List<SelectListItem>(){
+            var lista = new List<SelectListItem>(){
                 new SelectListItem(){ Text="bolivia", Value="1"},
                 new SelectListItem(){ Text="Chile", Value="0"},
-            };
-          }
+        };
+        }
         @Html.DropDownList("algo",lista)
         <br />
+
+        /***********************************/
+
         
-        /********************************************************************/
-        @using(Html.BeginForm())
-        {
+        @using (Html.BeginForm()){
             @Html.ValidationSummary()
+            
         @Html.LabelFor(a=>a.nombre)
         @Html.TextBoxFor(a=>a.nombre)
         @Html.ValidationMessageFor(a => a.nombre, "", new { style="color:red"})
-        <input type="submit"value="enviar" />
-        }
+         <input type="submit" value="enviar"/>      
+         }
+            
+            
+             <br />
+        @Html.LabelFor(a=>a.paterno)
+        @Html.TextBoxFor(a=>a.paterno)
+        @Html.ValidationMessageFor(a=>a.paterno)
+           <br />
+        @Html.LabelFor(a=>a.materno)
+        @Html.TextBoxFor(a=>a.materno)
+        @Html.ValidationMessageFor(a=>a.materno)
+       
 
     </div>
 </body>

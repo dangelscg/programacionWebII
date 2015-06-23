@@ -6,7 +6,7 @@ using System.Web;
 
 using System.ComponentModel.DataAnnotations;
 
-namespace PuntoDeEncuentro.Models
+namespace punto.Models
 {
     [MetadataType(typeof(itbevento))]
     public partial class tbevento
