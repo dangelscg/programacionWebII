@@ -1,0 +1,55 @@
+﻿@model punto.Models.tbgaleria
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Crear</title>
+</head>
+<body>
+    <div>
+        @using(Html.BeginForm())
+        {
+            @Html.Name("Registro Galeria")
+
+            
+            @Html.ValidationSummary()
+            @Html.LabelFor(a=>a.nombre)
+            @Html.TextBoxFor(a=>a.nombre)
+            @Html.ValidationMessageFor(a => a.nombre, "", new { style="color:red"})
+            <br />
+            @Html.LabelFor(a=>a.descripcion)
+            @Html.TextBoxFor(a=>a.descripcion)
+            @Html.ValidationMessageFor(a => a.descripcion, "", new { style="color:red"})
+             <br />
+            @Html.LabelFor(a=>a.idlugares)
+            @Html.TextBoxFor(a=>a.idlugares)
+            @Html.ValidationMessageFor(a => a.idlugares, "", new { style="color:red"})
+            <br />
+           @Html.LabelFor(a=>a.fechacreacion)
+            @Html.TextBoxFor(a=>a.fechacreacion)
+            @Html.ValidationMessageFor(a => a.fechacreacion, "", new { style="color:red"})   
+            <br />
+            
+            @Html.LabelFor(a=>a.fechamodificacion)
+            @Html.TextBoxFor(a=>a.fechamodificacion)
+            @Html.ValidationMessageFor(a => a.fechamodificacion, "", new { style="color:red"}) 
+            <br />   
+            @Html.LabelFor(a=>a.estado)        
+            var lista=new List<SelectListItem>(){
+                new SelectListItem(){ Text="True", Value="1"},
+                new SelectListItem(){ Text="False", Value="0"},
+            };
+            @Html.DropDownListFor(a=>a.estado,lista)
+            <br />
+            <input type="submit"value="enviar" />
+        }
+
+    </div>
+</body>
+</html>
