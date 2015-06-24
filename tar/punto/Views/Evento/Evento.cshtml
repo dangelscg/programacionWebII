@@ -1,0 +1,57 @@
+﻿@model punto.Models.tbevento
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Evento</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+
+
+            @Html.LabelFor(a => a.titulo)
+            @Html.TextBoxFor(a => a.titulo)
+            @Html.ValidationMessageFor(a => a.titulo, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.fecha)
+            // @Html.TextBoxFor(m => m.ExpirationDate, String.Format("0:dd/MM/yyyy}", Model.ExpitarionDate), new {@class="form-control", type="date" placeholder=m.ExpirationDate })
+            @Html.TextBoxFor(a =>a.fecha )
+            @Html.ValidationMessageFor(a => a.fecha, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.idtipo)
+            @Html.TextBoxFor(a => a.idtipo)
+            @Html.ValidationMessageFor(a => a.idtipo, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.idlugar)
+            @Html.TextBoxFor(a => a.idlugar)
+            @Html.ValidationMessageFor(a => a.idlugar, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.fechacreacion)
+            @Html.TextBoxFor(a => a.fechacreacion)
+            @Html.ValidationMessageFor(a => a.fechacreacion, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.fechamodificacion)
+            @Html.TextBoxFor(a => a.fechamodificacion)
+            @Html.ValidationMessageFor(a => a.fechamodificacion, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.estado)
+            @Html.TextBoxFor(a => a.estado)
+            @Html.ValidationMessageFor(a => a.estado, "", new { style = "color:red" })
+            <br/>
+            @Html.LabelFor(a => a.tblugares)
+            @Html.TextBoxFor(a => a.tblugares)
+            @Html.ValidationMessageFor(a => a.tblugares, "", new { style = "color:red" })
+            <br/>
+            <input type="submit" value="enviar" />
+        }
+    </div>
+</body>
+</html>
