@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="musicaModelStoreContainer" CdmEntityContainer="musicaEntities">
+    <EntitySetMapping Name="artista">
+      <EntityTypeMapping TypeName="musicaModel.artista">
+        <MappingFragment StoreEntitySet="artista">
+          <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+          <ScalarProperty Name="artista1" ColumnName="artista" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cancion">
+      <EntityTypeMapping TypeName="musicaModel.cancion">
+        <MappingFragment StoreEntitySet="cancion">
+          <ScalarProperty Name="id_cancion" ColumnName="id_cancion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="interprete" ColumnName="interprete" />
+          <ScalarProperty Name="album" ColumnName="album" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+          <ScalarProperty Name="tamaño" ColumnName="tamaño" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="genero">
+      <EntityTypeMapping TypeName="musicaModel.genero">
+        <MappingFragment StoreEntitySet="genero">
+          <ScalarProperty Name="id_genero" ColumnName="id_genero" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="tema" ColumnName="tema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="persona">
+      <EntityTypeMapping TypeName="musicaModel.persona">
+        <MappingFragment StoreEntitySet="persona">
+          <ScalarProperty Name="id_perosna" ColumnName="id_perosna" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="recientes">
+      <EntityTypeMapping TypeName="musicaModel.recientes">
+        <MappingFragment StoreEntitySet="recientes">
+          <ScalarProperty Name="id_recientes" ColumnName="id_recientes" />
+          <ScalarProperty Name="reciente" ColumnName="reciente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

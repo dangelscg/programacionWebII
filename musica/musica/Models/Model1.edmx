@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="musicaModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="artista">
+          <Key>
+            <PropertyRef Name="id_artista" />
+          </Key>
+          <Property Name="id_artista" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="artista" Type="int" />
+        </EntityType>
+        <EntityType Name="cancion">
+          <Key>
+            <PropertyRef Name="id_cancion" />
+          </Key>
+          <Property Name="id_cancion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="interprete" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="album" Type="varchar" MaxLength="30" />
+          <Property Name="duracion" Type="time" Precision="0" Nullable="false" />
+          <Property Name="tamaño" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="genero">
+          <Key>
+            <PropertyRef Name="id_genero" />
+          </Key>
+          <Property Name="id_genero" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tipo" Type="varchar" MaxLength="30" />
+          <Property Name="tema" Type="int" />
+        </EntityType>
+        <EntityType Name="persona">
+          <Key>
+            <PropertyRef Name="id_perosna" />
+          </Key>
+          <Property Name="id_perosna" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="30" />
+          <Property Name="usuario" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="recientes">
+          <Key>
+            <PropertyRef Name="id_recientes" />
+          </Key>
+          <Property Name="id_recientes" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="reciente" Type="int" />
+        </EntityType>
+        <EntityContainer Name="musicaModelStoreContainer">
+          <EntitySet Name="artista" EntityType="Self.artista" Schema="musica" store:Type="Tables" />
+          <EntitySet Name="cancion" EntityType="Self.cancion" Schema="musica" store:Type="Tables" />
+          <EntitySet Name="genero" EntityType="Self.genero" Schema="musica" store:Type="Tables" />
+          <EntitySet Name="persona" EntityType="Self.persona" Schema="musica" store:Type="Tables" />
+          <EntitySet Name="recientes" EntityType="Self.recientes" Schema="musica" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="musicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="artista">
+          <Key>
+            <PropertyRef Name="id_artista" />
+          </Key>
+          <Property Name="id_artista" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="artista1" Type="Int32" />
+        </EntityType>
+        <EntityType Name="cancion">
+          <Key>
+            <PropertyRef Name="id_cancion" />
+          </Key>
+          <Property Name="id_cancion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="interprete" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="album" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="duracion" Type="Time" Nullable="false" />
+          <Property Name="tamaño" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="genero">
+          <Key>
+            <PropertyRef Name="id_genero" />
+          </Key>
+          <Property Name="id_genero" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tipo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="tema" Type="Int32" />
+        </EntityType>
+        <EntityType Name="persona">
+          <Key>
+            <PropertyRef Name="id_perosna" />
+          </Key>
+          <Property Name="id_perosna" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="recientes">
+          <Key>
+            <PropertyRef Name="id_recientes" />
+          </Key>
+          <Property Name="id_recientes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="reciente" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="musicaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="artista" EntityType="Self.artista" />
+          <EntitySet Name="cancion" EntityType="Self.cancion" />
+          <EntitySet Name="genero" EntityType="Self.genero" />
+          <EntitySet Name="persona" EntityType="Self.persona" />
+          <EntitySet Name="recientes" EntityType="Self.recientes" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="musicaModelStoreContainer" CdmEntityContainer="musicaEntities">
+          <EntitySetMapping Name="artista">
+            <EntityTypeMapping TypeName="musicaModel.artista">
+              <MappingFragment StoreEntitySet="artista">
+                <ScalarProperty Name="id_artista" ColumnName="id_artista" />
+                <ScalarProperty Name="artista1" ColumnName="artista" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cancion">
+            <EntityTypeMapping TypeName="musicaModel.cancion">
+              <MappingFragment StoreEntitySet="cancion">
+                <ScalarProperty Name="id_cancion" ColumnName="id_cancion" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="interprete" ColumnName="interprete" />
+                <ScalarProperty Name="album" ColumnName="album" />
+                <ScalarProperty Name="duracion" ColumnName="duracion" />
+                <ScalarProperty Name="tamaño" ColumnName="tamaño" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="genero">
+            <EntityTypeMapping TypeName="musicaModel.genero">
+              <MappingFragment StoreEntitySet="genero">
+                <ScalarProperty Name="id_genero" ColumnName="id_genero" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="tema" ColumnName="tema" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="persona">
+            <EntityTypeMapping TypeName="musicaModel.persona">
+              <MappingFragment StoreEntitySet="persona">
+                <ScalarProperty Name="id_perosna" ColumnName="id_perosna" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="usuario" ColumnName="usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="recientes">
+            <EntityTypeMapping TypeName="musicaModel.recientes">
+              <MappingFragment StoreEntitySet="recientes">
+                <ScalarProperty Name="id_recientes" ColumnName="id_recientes" />
+                <ScalarProperty Name="reciente" ColumnName="reciente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

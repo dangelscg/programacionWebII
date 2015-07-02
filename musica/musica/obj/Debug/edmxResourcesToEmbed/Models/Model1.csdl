@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="musicaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="artista">
+    <Key>
+      <PropertyRef Name="id_artista" />
+    </Key>
+    <Property Name="id_artista" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="artista1" Type="Int32" />
+  </EntityType>
+  <EntityType Name="cancion">
+    <Key>
+      <PropertyRef Name="id_cancion" />
+    </Key>
+    <Property Name="id_cancion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="interprete" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="album" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="duracion" Type="Time" Nullable="false" />
+    <Property Name="tamaño" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="genero">
+    <Key>
+      <PropertyRef Name="id_genero" />
+    </Key>
+    <Property Name="id_genero" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="tema" Type="Int32" />
+  </EntityType>
+  <EntityType Name="persona">
+    <Key>
+      <PropertyRef Name="id_perosna" />
+    </Key>
+    <Property Name="id_perosna" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="recientes">
+    <Key>
+      <PropertyRef Name="id_recientes" />
+    </Key>
+    <Property Name="id_recientes" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="reciente" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="musicaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="artista" EntityType="Self.artista" />
+    <EntitySet Name="cancion" EntityType="Self.cancion" />
+    <EntitySet Name="genero" EntityType="Self.genero" />
+    <EntitySet Name="persona" EntityType="Self.persona" />
+    <EntitySet Name="recientes" EntityType="Self.recientes" />
+  </EntityContainer>
+</Schema>
